@@ -1,0 +1,6 @@
+2019-11-04 15:41:12,206 [main] INFO Tc_2 - Browser Opened
+2019-11-04 15:41:12,216 [main] INFO Tc_2 - Implicit wait given
+2019-11-04 15:41:13,520 [main] INFO Tc_2 - Url opened
+2019-11-04 15:41:13,614 [main] INFO Tc_2 - keyword type
+2019-11-04 15:41:42,647 [main] INFO Tests.Tc_1 - hello world
+2019-11-04 15:41:50,228 [main] INFO Tests.Tc_1 - hello world
