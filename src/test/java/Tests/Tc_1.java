@@ -74,6 +74,7 @@ public class Tc_1 extends Baseclass
 	{
 		test=extent.createTest("salman");
 		log=new LoginPage(driver);
+		System.out.println("im added to this code");
 		Assert.assertEquals(12, 13);
 
 		/*log.SetUsername("rakesh");
