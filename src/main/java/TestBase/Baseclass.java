@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
+
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -24,6 +24,8 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.google.common.io.Files;
 
 import TestUtilities.readConfig;
+
+
 
 public class Baseclass
 {
@@ -34,6 +36,9 @@ readConfig rc=new readConfig();
     public String url=rc.geturl();
     public String username=rc.getusername();
     public String password=rc.getpassword();
+    public String firstname=rc.getFirstname();
+    public String lastname=rc.getLastname();
+    public String photo=rc.getImagepath();
     
     public static WebDriver driver;
     public WebDriverWait wait;

@@ -4,20 +4,24 @@
   <test name="Test">
     <classes>
       <class name="Tests.Tc_1"/>
+      <class name="Tests.Tc_2"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test(failed)">
     <classes>
       <class name="Tests.Tc_1">
         <methods>
-          <include name="tearDown"/>
-          <include name="salman"/>
-          <include name="extent_report"/>
           <include name="launch"/>
-          <include name="end"/>
           <include name="r"/>
         </methods>
       </class> <!-- Tests.Tc_1 -->
+      <class name="Tests.Tc_2">
+        <methods>
+          <include name="launch"/>
+          <include name="f"/>
+          <include name="r"/>
+        </methods>
+      </class> <!-- Tests.Tc_2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

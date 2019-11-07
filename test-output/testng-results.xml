@@ -1,57 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28999" started-at="2019-11-06T08:58:55Z" finished-at="2019-11-06T08:59:24Z">
+  <suite name="Default suite" duration-ms="50798" started-at="2019-11-07T10:26:48Z" finished-at="2019-11-07T10:27:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28999" started-at="2019-11-06T08:58:55Z" finished-at="2019-11-06T08:59:24Z">
-      <class name="Tests.Tc_1">
-        <test-method status="PASS" signature="ExtentReport()[pri:0, instance:Tests.Tc_1@7a79be86]" name="ExtentReport" is-config="true" duration-ms="313" started-at="2019-11-06T14:28:55Z" finished-at="2019-11-06T14:28:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReport -->
-        <test-method status="PASS" signature="r()[pri:0, instance:Tests.Tc_1@7a79be86]" name="r" is-config="true" duration-ms="31" started-at="2019-11-06T14:28:55Z" finished-at="2019-11-06T14:28:55Z">
+    <test name="Default test" duration-ms="50798" started-at="2019-11-07T10:26:48Z" finished-at="2019-11-07T10:27:39Z">
+      <class name="Tests.Tc_2">
+        <test-method status="PASS" signature="r()[pri:0, instance:Tests.Tc_2@59a6e353]" name="r" is-config="true" duration-ms="74" started-at="2019-11-07T15:56:48Z" finished-at="2019-11-07T15:56:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r -->
-        <test-method status="PASS" signature="launch()[pri:0, instance:Tests.Tc_1@7a79be86]" name="launch" is-config="true" duration-ms="12105" started-at="2019-11-06T14:28:55Z" finished-at="2019-11-06T14:29:07Z">
+        <test-method status="PASS" signature="launch()[pri:0, instance:Tests.Tc_2@59a6e353]" name="launch" is-config="true" duration-ms="19680" started-at="2019-11-07T15:56:48Z" finished-at="2019-11-07T15:57:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="Tc1()[pri:0, instance:Tests.Tc_1@7a79be86]" name="Tc1" duration-ms="1930" started-at="2019-11-06T14:29:07Z" finished-at="2019-11-06T14:29:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tc1 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.Tc_1@7a79be86]" name="tearDown" is-config="true" duration-ms="24" started-at="2019-11-06T14:29:10Z" finished-at="2019-11-06T14:29:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Tc1 status=SUCCESS method=Tc_1.Tc1()[pri:0, instance:Tests.Tc_1@7a79be86] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launch()[pri:0, instance:Tests.Tc_1@7a79be86]" name="launch" is-config="true" duration-ms="13045" started-at="2019-11-06T14:29:10Z" finished-at="2019-11-06T14:29:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method status="FAIL" signature="salman()[pri:0, instance:Tests.Tc_1@7a79be86]" name="salman" duration-ms="80" started-at="2019-11-06T14:29:23Z" finished-at="2019-11-06T14:29:23Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="f()[pri:0, instance:Tests.Tc_2@59a6e353]" name="f" duration-ms="30936" started-at="2019-11-07T15:57:08Z" finished-at="2019-11-07T15:57:39Z">
+          <exception class="org.openqa.selenium.json.JsonException">
             <message>
-              <![CDATA[expected [13] but found [12]]]>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D6VBTLG', ip: '192.168.0.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [13] but found [12]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:389)
-	at org.testng.Assert.assertEquals(Assert.java:399)
-	at Tests.Tc_1.salman(Tc_1.java:77)
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D6VBTLG', ip: '192.168.0.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at TestBase.Baseclass.movetomouseover(Baseclass.java:91)
+	at PageObjects.AddEmployee.setaddemp(AddEmployee.java:43)
+	at Tests.Tc_2.f(Tc_2.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -76,24 +75,58 @@
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D6VBTLG', ip: '192.168.0.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 34 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 46 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Add Employee"}
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D6VBTLG', ip: '192.168.0.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99e92338b87717916f58dd93fdd57317
+*** Element info: {Using=link text, value=Add Employee}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 51 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- salman -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.Tc_1@7a79be86]" name="tearDown" is-config="true" duration-ms="332" started-at="2019-11-06T14:29:23Z" finished-at="2019-11-06T14:29:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=salman status=FAILURE method=Tc_1.salman()[pri:0, instance:Tests.Tc_1@7a79be86] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Tc_1 -->
+        </test-method> <!-- f -->
+      </class> <!-- Tests.Tc_2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

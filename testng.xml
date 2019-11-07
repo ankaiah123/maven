@@ -4,6 +4,6 @@
   <test name="Test">
     <classes>
       <class name="Tests.Tc_1"/>
-    </classes>
+        </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

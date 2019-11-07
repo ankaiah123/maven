@@ -31,7 +31,7 @@ public class listen extends Baseclass implements ITestListener {
 	// TODO Auto-generated method stub
 		if(result.getStatus() == ITestResult.FAILURE)
 		{
-			test.log(Status.FAIL, "Test case Failed"+result.getName());
+			test.log(Status.FAIL, "Test case Failed"+result.getMethod().getMethodName());
 			test.log(Status.FAIL, "Test case Failes" + result.getThrowable());
 			
 			String Location= screen(driver, result.getName());

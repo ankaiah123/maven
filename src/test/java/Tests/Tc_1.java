@@ -1,5 +1,7 @@
 package Tests;
 
+import javax.xml.ws.LogicalMessage;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.Assert;
@@ -12,36 +14,29 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
+
 
 import PageObjects.LoginPage;
 import TestBase.Baseclass;
 
-@Listeners(Tests.listen.class)	
+
+
+//@Listeners(Tests.listen.class)	
 public class Tc_1 extends Baseclass
 {
-	LoginPage log;
+	LoginPage lg;
 	
 	public Logger k;
 	
 	
 	
-	@BeforeTest
-	public void ExtentReport()
-	{
-		extent_report();
-		end();
-	}
+	
 	@BeforeClass
 	public void r()
 	{
 		
 		k=Logger.getLogger(Tc_1.class);
-		PropertyConfigurator.configure("Log4j.properties");
+		//PropertyConfigurator.configure("Log4j.properties");
 	}
 	
 	
@@ -52,40 +47,40 @@ public class Tc_1 extends Baseclass
 	Setup("chrome");
 		System.out.println("Maximize the Browser");
 		
-		k.info("hello world");
+		//k.info("hello world");
 	}
 	@Test
 	public void Tc1() throws Exception
 	{
-		test=extent.createTest("Tc1");
-		log=new LoginPage(driver);
+	//	test=extent.createTest("Tc1");
+		lg=new LoginPage(driver);
 		
-		log.SetUsername(username);
-		//Thread.sleep(2000);
+		lg.SetUsername(username);
+		Thread.sleep(2000);
 		//screen(driver, "rajesh");
-		log.SetPassword(password);
+		lg.SetPassword(password);
 		//Thread.sleep(4000);
-		log.SetLogin();
+		lg.SetLogin();
 		
 	}
-	@Test
 	
-	public void salman() throws Exception
+/*	@Test
+		public void salman() throws Exception
 	{
 		test=extent.createTest("salman");
 		log=new LoginPage(driver);
 		System.out.println("im added to this code");
-		Assert.assertEquals(12, 13);
+		
 
-		/*log.SetUsername("rakesh");
+		log.SetUsername("rakesh");
 		Thread.sleep(2000);
 		screen(driver, "rajesh");
 		log.SetPassword(password);
 		Thread.sleep(4000);
 		log.SetLogin();
-*/		
+		
 
-	}
+	}*/
 	
 	
 	
